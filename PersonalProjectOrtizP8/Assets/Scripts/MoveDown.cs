@@ -24,20 +24,4 @@ public class MoveDown : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.CompareTag("Enemy2"))
-        {
-            Debug.Log("Player has collided with enemy.");
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.CompareTag("Powerup"))
-        {
-            Destroy(other.gameObject);
-        }
-    }
 }
